@@ -1,0 +1,24 @@
+  <script>
+	  function proses() {
+        var hs = document.getElementById('ta').value;
+        document.getElementById('hasil').innerHTML = hs;
+        }
+        function bersih() {
+        document.getElementById('ta').value = "";
+        document.getElementById('hasil').innerHTML = "";
+        }
+    </script>
+	       
+	       <div class="panel" title="Program" id="page3" data-footer="none">
+                    <header>
+                        <a id="menubadge" onclick="$.ui.toggleSideMenu()" class="menuButton" style="float:left !important"></a>
+                        <h1>Program</h1>
+                    </header>
+                    <table width=100%><tr><td><button class="button green" onClick="proses()" value="RUN">RUN</button></td>
+                    <td align="right"><button class="button red" onClick="bersih()" >CLEAR</button></td></tr></table>
+                    <div >
+                
+                <textarea rows="15" id="ta"></textarea>
+            </div>
+            <hr><br>
+            <div id="hasil"></div> 
